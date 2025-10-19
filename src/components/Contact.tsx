@@ -178,7 +178,7 @@ export default function Contact() {
                 </motion.div>
                 <div className="text-center px-4">
                   <p className="text-cyan-400 font-bold text-lg mb-1">Ready to Chat?</p>
-                  <p className="text-gray-400 text-sm">I'm just a message away!</p>
+                  <p className="text-gray-400 text-sm">I&apos;m just a message away!</p>
                 </div>
               </div>
 

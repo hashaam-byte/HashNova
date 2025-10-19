@@ -42,7 +42,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Hey, I'm <br />
+              Hey, I&apos;m <br />
               <span className="text-cyan-400">Hashaam Mustafa</span>
             </motion.h2>
 

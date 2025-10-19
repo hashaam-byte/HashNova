@@ -43,13 +43,13 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-lg text-gray-300">
               <p>
-                I'm a passionate developer focused on building privacy-first, AI-powered, and user-centered apps. I love combining creativity and tech to bring futuristic experiences to life.
+                I&apos;m a passionate developer focused on building privacy-first, AI-powered, and user-centered apps. I love combining creativity and tech to bring futuristic experiences to life.
               </p>
               <p>
-                Since 2023, I've been crafting stunning websites for clients, pushing the boundaries of what's possible on the web. Currently studying at UPSS while building the next generation of web applications.
+                Since 2023, I&apos;ve been crafting stunning websites for clients, pushing the boundaries of what&apos;s possible on the web. Currently studying at UPSS while building the next generation of web applications.
               </p>
               <p>
-                My journey in coding has been driven by curiosity and a desire to create tools that make a real difference. From real-time communication platforms to educational solutions, I'm always exploring new technologies and challenges.
+                My journey in coding has been driven by curiosity and a desire to create tools that make a real difference. From real-time communication platforms to educational solutions, I&apos;m always exploring new technologies and challenges.
               </p>
             </div>
 
