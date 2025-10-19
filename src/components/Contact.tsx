@@ -18,7 +18,7 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-xl text-gray-400">
-            Let's build something amazing together
+            Let&apos;s build something amazing together
           </p>
         </motion.div>
 
@@ -32,7 +32,7 @@ export default function Contact() {
           >
             <div>
               <h3 className="text-3xl font-bold text-white mb-4">
-                Let's Connect! 🚀
+                Let&apos;s Connect! 🚀
               </h3>
               <p className="text-gray-300 text-lg mb-8">
                 Have a project in mind? Want to collaborate? Or just want to say hi? 

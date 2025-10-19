@@ -12,7 +12,7 @@ interface Skill {
   level: number;
 }
 
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, React.ElementType> = {
   SiJavascript,
   SiTypescript,
   SiReact,

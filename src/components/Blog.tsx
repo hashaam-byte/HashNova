@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface BlogPost {
   id: string;
@@ -74,9 +75,11 @@ export default function Blog() {
                 {/* Cover Image */}
                 <div className="relative h-48 bg-gradient-to-br from-cyan-500/10 to-blue-600/10 flex items-center justify-center overflow-hidden">
                   {post.coverImage ? (
-                    <img
+                    <Image
                       src={post.coverImage}
                       alt={post.title}
+                      width={500}
+                      height={300}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   ) : (

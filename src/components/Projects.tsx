@@ -156,7 +156,7 @@ export default function Projects() {
             href="#contact"
             className="inline-block px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full font-bold text-lg shadow-lg shadow-cyan-500/50 hover:shadow-cyan-500/80 hover:scale-105 transition-all duration-300"
           >
-            Let's Build Something Amazing
+            Let&apos;s Build Something Amazing
           </a>
         </motion.div>
       </div>

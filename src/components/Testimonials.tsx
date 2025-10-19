@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 interface Testimonial {
   id: string;
@@ -88,7 +89,13 @@ export default function Testimonials() {
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center text-2xl">
                     {testimonial.imageUrl ? (
-                      <img src={testimonial.imageUrl} alt={testimonial.name} className="w-full h-full rounded-full object-cover" />
+                      <Image
+                        src={testimonial.imageUrl}
+                        alt={testimonial.name}
+                        width={48}
+                        height={48}
+                        className="w-full h-full rounded-full object-cover"
+                      />
                     ) : (
                       testimonial.name.charAt(0)
                     )}

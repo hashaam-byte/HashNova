@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 interface ThreeDModeProps {
   onExit: () => void;
@@ -603,7 +604,6 @@ export default function ThreeDMode({ onExit }: ThreeDModeProps) {
 
     const animate = () => {
       requestAnimationFrame(animate);
-      const delta = clock.getDelta();
       const time = clock.getElapsedTime();
 
       // Update target position
@@ -744,7 +744,13 @@ export default function ThreeDMode({ onExit }: ThreeDModeProps) {
               </div>
               
               {selectedProject.imageUrl && (
-                <img src={selectedProject.imageUrl} alt={selectedProject.title} className="w-full h-64 object-cover rounded-xl mb-4" />
+                <Image
+                  src={selectedProject.imageUrl}
+                  alt={selectedProject.title}
+                  width={500}
+                  height={300}
+                  className="w-full h-64 object-cover rounded-xl mb-4"
+                />
               )}
               
               <p className="text-gray-300 text-lg mb-6">{selectedProject.description}</p>
@@ -896,12 +902,18 @@ export default function ThreeDMode({ onExit }: ThreeDModeProps) {
                 <button onClick={closeAllModals} className="text-gray-400 hover:text-white text-2xl">×</button>
               </div>
               
-              <p className="text-gray-300 text-xl italic mb-6">"{selectedTestimonial.content}"</p>
+              <p className="text-gray-300 text-xl italic mb-6">&quot;{selectedTestimonial.content}&quot;</p>
               
               <div className="flex items-center gap-4">
                 <div className="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center text-3xl">
                   {selectedTestimonial.imageUrl ? (
-                    <img src={selectedTestimonial.imageUrl} alt={selectedTestimonial.name} className="w-full h-full rounded-full object-cover" />
+                    <Image
+                      src={selectedTestimonial.imageUrl}
+                      alt={selectedTestimonial.name}
+                      width={64}
+                      height={64}
+                      className="w-full h-full rounded-full object-cover"
+                    />
                   ) : (
                     selectedTestimonial.name.charAt(0)
                   )}
@@ -941,7 +953,13 @@ export default function ThreeDMode({ onExit }: ThreeDModeProps) {
               </div>
               
               {selectedBlogPost.coverImage && (
-                <img src={selectedBlogPost.coverImage} alt={selectedBlogPost.title} className="w-full h-64 object-cover rounded-xl mb-4" />
+                <Image
+                  src={selectedBlogPost.coverImage}
+                  alt={selectedBlogPost.title}
+                  width={500}
+                  height={300}
+                  className="w-full h-64 object-cover rounded-xl mb-4"
+                />
               )}
               
               <div className="flex items-center gap-2 mb-4 text-sm text-gray-400">
@@ -994,14 +1012,14 @@ export default function ThreeDMode({ onExit }: ThreeDModeProps) {
               </div>
               
               <div className="space-y-4 text-lg text-gray-300 mb-6">
-                <p>
-                  I'm a passionate developer focused on building privacy-first, AI-powered, and user-centered apps. I love combining creativity and tech to bring futuristic experiences to life.
+                <p className="text-gray-300 text-lg mb-6">
+                  I&apos;m a passionate developer focused on building privacy-first, AI-powered, and user-centered apps. I love combining creativity and tech to bring futuristic experiences to life.
                 </p>
-                <p>
-                  Since 2023, I've been crafting stunning websites for clients, pushing the boundaries of what's possible on the web. Currently studying at UPSS while building the next generation of web applications.
+                <p className="text-gray-300 text-lg mb-6">
+                  Since 2023, I&apos;ve been crafting stunning websites for clients, pushing the boundaries of what&apos;s possible on the web. Currently studying at UPSS while building the next generation of web applications.
                 </p>
-                <p>
-                  My journey in coding has been driven by curiosity and a desire to create tools that make a real difference. From real-time communication platforms to educational solutions, I'm always exploring new technologies and challenges.
+                <p className="text-gray-300 text-lg mb-6">
+                  My journey in coding has been driven by curiosity and a desire to create tools that make a real difference. From real-time communication platforms to educational solutions, I&apos;m always exploring new technologies and challenges.
                 </p>
               </div>
 
