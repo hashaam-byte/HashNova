@@ -327,7 +327,7 @@ export default function SkillManager() {
 
   // Get icon component dynamically
   const getIconComponent = (iconName: string) => {
-    const IconComponent = (SimpleIcons as any)[iconName];
+    const IconComponent = (SimpleIcons as Record<string, React.ElementType>)[iconName];
     return IconComponent ? <IconComponent className="w-6 h-6" /> : <span>⚡</span>;
   };
 
